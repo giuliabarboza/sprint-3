@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início</title>
+    <link rel="icon" href="Imagens/estrela.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="div-cabecalho">
+        <h1>Biblioteca Aurora</h1>
+        <button><a href="usuario.html">Cadastro</a></button>
+    </div>
+    <br>
+    <center>
+        <fieldset>
+            <img id="imagem" src="Imagens/icons8-estrela-50.png" width="55" height="55"><br>
+            <button><a href="cliente.html">Cadastro do cliente</a></button><br>
+            <button><a href="livros.html">Cadastro de livros</a></button><br>
+            <button><a href="emprestimo.html">Empréstimos</a></button><br>
+            <button><a href="sobre.html">Sobre a Biblioteca Aurora</a></button> <br>
+            <button><a href="consu_emprestimo.php">Consulta Empréstimo</a></button><br>
+            <button><a href="consu_livro.php">Consulta Livros</a></button>
+        </fieldset>
+    </center>
+    <br>
+    <footer>
+        <center>
+            Copyright 2024 © - Desenvolvimento de Sistemas<br>Ourinhos - SP
+        </center>
+    </footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+
+</html>

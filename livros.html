@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livros</title>
+    <link rel="stylesheet" href="livros.css">
+</head>
+
+<body>
+    <form action="livros.php" method="post">
+        <center>
+            <h1>Cadastro dos Livros</h1>
+        </center>
+        <hr>
+        <br>
+        <fieldset>
+            <h3>Dados:</h3>
+            <label>ISBN:</label>
+            <input type="number" name="ISBN" placeholder="digite o ISBN" required /><br>
+            <label>Título:</label>
+            <input type="text" name="titulo" placeholder="digite o título" required /><br>
+            <label>Autor:</label>
+            <input type="text" name="autor" placeholder="digite o autor" required /><br>
+            <label>Gênero:</label>
+            <input type="text" name="genero" placeholder="digite o gênero" required /><br>
+            <label>N° de páginas:</label>
+            <input type="number" name="num_paginas" required /><br>
+            <label>Editora:</label>
+            <input type="text" name="editora" placeholder="digite a editora" required /><br>
+            <label>Idioma:</label>
+            <input type="text" name="idioma" placeholder="digite o idioma" required /><br>
+            <label>Quantidade:</label>
+            <input type="number" name="quantidade" required />
+            <br><br>
+            <button type="submit">Concluir</button>
+            <br><br>
+        </fieldset>
+    </form>
+    <button><a href="index.html">Voltar</a></button>
+    <br><br>
+    <center>
+        <footer>
+            <br><br>
+            Copyright 2024 © - Desenvolvimento de Sistemas<br>Ourinhos - SP
+            <br>
+            <br>
+        </footer>
+    </center>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+
+</html>

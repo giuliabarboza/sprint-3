@@ -1,0 +1,45 @@
+body {
+    background-color: rgba(135, 191, 255, 0.685);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+fieldset {
+    font-size: medium;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 375px;
+    background-color: rgb(26, 14, 152);
+    color: white;
+    border-radius: 7px;
+    border-style: hidden;
+    margin-left: 36%;
+}
+
+input {
+    border-radius: 5px;
+    border-color: lightgray;
+    height: 19px;
+}
+
+button {
+    background-color: rgba(98, 179, 255, 0.844);
+    border-radius: 5px;
+    border: none;
+    height: 23px;
+    width: 100px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    background-color: rgb(26, 14, 152);
+    color: white;
+}
+
+.div-termos{
+    color: white;
+}

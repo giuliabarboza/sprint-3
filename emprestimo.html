@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espréstimo</title>
+    <link rel="icon" href="Imagens/estrela.png">
+    <link rel="stylesheet" href="emprestimo.css">
+</head>
+
+<body>
+    <center>
+        <h1>Empréstimos</h1>
+        <hr>
+    </center>
+    <form action="emprestimo.php" method="post">
+        <fieldset>
+            <h3>Dados</h3>
+            <label>ID do Usuário:</label>
+            <input type="number" name="id_usuario" placeholder="ID do usuário" required><br>
+            <label>ID do Cliente:</label>
+            <input type="number" name="id_cliente" placeholder="ID do cliente" required><br>
+            <label>ISBN:</label>
+            <input type="number" name="ISBN" placeholder="xxx-xxx.xx" required><br>
+            <label>Data do Empréstimo:</label>
+            <input type="date" name="data_emprestimo" required><br>
+            <label>Data de Devolução:</label>
+            <input type="date" name="data_devolucao" required><br>
+            <button type="submit">Concluir</button>
+        </fieldset><br>
+    </form>
+    <button><a href="index.html">Voltar</a></button><br><br>
+    <center>
+        <footer>
+            <br>
+            Copyright 2024 © - Desenvolvimento de Sistemas<br>Ourinhos - SP
+        </footer>
+    </center>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+
+</html>

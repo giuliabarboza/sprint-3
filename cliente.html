@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente</title>
+    <link rel="icon" href="Imagens/estrela.png">
+    <link rel="stylesheet" href="cliente.css">
+</head>
+
+<body>
+    <center>
+        <h1>Cadastro de Cliente</h1>
+    </center>
+    <hr>
+    <form method="post" action="cliente.php">
+        <fieldset>
+            <h3>Dados pessoais</h3>
+            <label>Nome:</label>
+            <input type="text" name="nome_cliente" placeholder="digite seu nome" required><br>
+            <label>Email:</label>
+            <input type="email" name="email_cliente" placeholder="a@a.com" required><br>
+            <label>Telefone:</label>
+            <input type="tel" name="tel_cliente" placeholder="(xx)xxxxx-xxxx" required><br>
+            <label>Data de nascimento:</label>
+            <input type="date" name="data_cliente" required><br>
+            <label>Endereço</label>
+            <input type="text" name="endereco_cliente" placeholder="Endereço" required><br>
+            <label>CPF:</label>
+            <input typy="text" name="cpf_cliente" placeholder="xxx.xxx.xxx-xx" required><br>
+            <h3>Termos de condições</h3>
+            Ao aceitar nossos termos de condições voce esta informando que podemeremos usar seus dados acima<br><br>
+            <div class="div-opcao">
+                <input type="radio" name="resposta" id="sim" value="sim" checked required />
+                <label for="sim">Sim</label>
+                <input type="radio" name="resposta" id="nao" value="nao" />
+                <label for="nao">Não</label><br>
+            </div>
+            <br><br>
+            <button type="submit">Concluir</button>
+        </fieldset>
+    </form>
+    <br><br>
+    <button><a href="index.html">Voltar</a></button>
+    <br><br>
+    <center>
+        <footer>
+            Copyright 2024 © - Desenvolvimento de Sistemas<br>Ourinhos - SP
+        </footer>
+    </center>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+
+</html>

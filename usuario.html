@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+    <link rel="stylesheet" href="usuario.css">
+</head>
+
+<body>
+    <form action="usuario.php" method="post">
+        <center>
+            <h1>Cadastro de Usuário</h1>
+        </center>
+        <hr>
+        <fieldset><br>
+            <label>Nome:</label>
+            <input type="text" name="nome_usuario" placeholder="digite seu nome" required>
+            <br>
+            <label>Data:</label>
+            <input type="date" name="data_usuario" required>
+            <br>
+            <label>Telefone:</label>
+            <input type="tel" name="tel_usuario" placeholder="(xx)xxxxx-xxxx" required>
+            <br>
+            <label>Email:</label>
+            <input type="email" name="email_usuario" placeholder="a@a.com" required>
+            <br>
+            <label>CPF:</label>
+            <input typy="text" name="cpf_usuario" placeholder="xxx.xxx.xxx-xx" required>
+            <br>
+            <label>Endereço</label>
+            <input type="text" name="endereco_usuario" placeholder="Endereço" required>
+            <br>
+            <h3>Termos de condições</h3>
+            Ao aceitar nossos termos de condições voce esta informando que podemeremos usar seus dados acima
+            <div class="div-termos">
+                <input type="radio" name="resposta" id="sim" value="sim" checked required />
+                <label for="sim">Sim</label>
+                <input type="radio" name="resposta" id="nao" value="nao" />
+                <label for="nao">Não</label>
+            </div>
+            <br>
+            <button type="submit">Concluir</button>
+        </fieldset><br><br>
+        <button><a href="index.html">Voltar</a></button><br><br>
+        <center>
+            <footer>
+                Copyright 2024 © - Biblioteca Aurora <br>Ourinhos - SP
+            </footer>
+        </center>
+
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+</body>
+
+</html>
