@@ -28,6 +28,7 @@
                 <th>Editora</th>
                 <th>Idioma</th>
                 <th>Quantidade</th>
+                <th>Disponibilidade</th>
             </tr>
             <tbody>
                 <?php
@@ -46,6 +47,10 @@
                     $editora = $linha['editora'];
                     $idioma = $linha['idioma'];
                     $quantidade = $linha['quantidade'];
+                    $disponibilidade = $linha['disponibilidade'];
+                    if($quantidade>0){
+                        $disponibilidade="sim";
+                    }
 
                     echo "<tr>
                         <td>$isbn</td>
@@ -56,6 +61,7 @@
                         <td>$editora</td>
                         <td>$idioma</td>
                         <td>$quantidade</td>
+                        <td>$disponibilidade</td>
                     </tr>
                 ";
                 }
